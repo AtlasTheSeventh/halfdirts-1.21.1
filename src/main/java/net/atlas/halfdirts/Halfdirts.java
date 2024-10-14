@@ -1,5 +1,7 @@
 package net.atlas.halfdirts;
 
+import net.atlas.halfdirts.block.ModBlocks;
+import net.atlas.halfdirts.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ public class Halfdirts implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
